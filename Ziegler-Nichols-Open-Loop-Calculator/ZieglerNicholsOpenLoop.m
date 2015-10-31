@@ -85,9 +85,10 @@ t_dead = xIntercept;
 
 %timetoMaxOutputBySlope is subtact t_dead from time when y value of line is
 %equal to maxoutput
+%y = mx + c
 %x = y-c/m
 
-timeConstant =  (maxOutput-yInterecpt) / maxSlope
+timeConstant =  ((maxOutput-yInterecpt) / maxSlope)  - t_dead 
 
 
 L = t_dead
